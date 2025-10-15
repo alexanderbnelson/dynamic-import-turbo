@@ -1,0 +1,84 @@
+/* COLOUR VARIABLES */
+[data-color-theme="theme-two-palette"] {
+  --color-background: hsl(150 25% 98%);
+  --color-foreground: hsl(150 25% 5%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(150 25% 5%);
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(150 25% 5%);
+  --color-primary: hsl(150 25% 5%);
+  --color-primary-foreground: hsl(150 25% 98%);
+  --color-secondary: hsl(150 5% 94%);
+  --color-secondary-foreground: hsl(45 25% 5%);
+  --color-muted: hsl(150 5% 94%);
+  --color-muted-foreground: hsl(150 5% 45%);
+  --color-accent: hsl(150 25% 5%);
+  --color-accent-foreground: hsl(150 25% 98%);
+  --color-destructive: hsl(0 80% 50%);
+  --color-destructive-foreground: hsl(150 25% 98%);
+  --color-border: hsl(150 5% 88%);
+  --color-input: hsl(150 5% 88%);
+  --color-ring: hsl(150 10% 65%);
+
+  /* Custom Colors */
+  --color-brand: hsl(150 25% 5%); /* Using primary */
+  --color-brand-foreground: hsl(150 25% 98%); /* Using primary-foreground */
+  --color-highlight: hsl(222 84% 50%);
+  --color-highlight-foreground: hsl(0 0% 100%);
+  --color-light: hsl(150 20% 96%); /* Lighter than background */
+  --color-light-foreground: hsl(150 25% 15%); /* Darker text for light bg */
+  --color-dark: hsl(150 25% 5%); /* Using primary as dark element color */
+  --color-dark-foreground: hsl(150 25% 98%); /* Using primary-foreground */
+
+  --color-white: hsl(0 0% 100%);
+  --color-black: hsl(0 0% 0%);
+
+  /* Chart Colors (derived from highlight) */
+  --color-chart-1: hsl(222 84% 50%);
+  --color-chart-2: hsl(222 84% 60%);
+  --color-chart-3: hsl(222 84% 70%);
+  --color-chart-4: hsl(222 84% 40%);
+  --color-chart-5: hsl(222 84% 30%);
+
+  --radius: 0.5rem;
+}
+
+/* FONTS VARIABLES */
+[data-font-theme="theme-two-font"] {
+  --font-display: "SuisseAntique";
+  --font-display-secondary: "SuisseMedium";
+  --font-text: "SuisseRegular";
+  --font-text-secondary: "SuisseLight";
+  --font-mono: "SuisseMono";
+}
+
+/* FONTS */
+@font-face {
+  font-family: "SuisseAntique";
+  src: url("./fonts/Suisse-BP-Antique.otf");
+  display: "swap";
+}
+
+@font-face {
+  font-family: "SuisseMedium";
+  src: url("./fonts/Suisse-BP-Medium.otf");
+  display: "swap";
+}
+
+@font-face {
+  font-family: "SuisseRegular";
+  src: url("./fonts/Suisse-BP-Regular.otf");
+  display: "swap";
+}
+
+@font-face {
+  font-family: "SuisseLight";
+  src: url("./fonts/Suisse-BP-Light.otf");
+  display: "swap";
+}
+
+@font-face {
+  font-family: "SuisseMono";
+  src: url("./fonts/Suisse-BP-Mono-Regular.otf");
+  display: "swap";
+}

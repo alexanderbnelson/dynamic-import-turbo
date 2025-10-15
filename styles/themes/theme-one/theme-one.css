@@ -1,0 +1,125 @@
+/* COLOUR VARIABLES */
+[data-color-theme="theme-one-palette"] {
+  /* Dark theme */
+  --color-background: hsl(200 100% 15%);
+  --color-foreground: hsl(50 5% 95%);
+  --color-card: hsl(200 100% 15%);
+  --color-card-foreground: hsl(50 5% 95%);
+  --color-popover: hsl(
+    0 0% 100%
+  ); /* Popover is often light even in dark themes */
+  --color-popover-foreground: hsl(250 5% 11.2%);
+  --color-primary: hsl(200 100% 65%);
+  --color-primary-foreground: hsl(200 100% 5%);
+  --color-secondary: hsl(200 100% 25%);
+  --color-secondary-foreground: hsl(200 100% 90%);
+  --color-muted: hsl(200 80% 10%);
+  --color-muted-foreground: hsl(200 30% 50%);
+  --color-accent: hsl(65 90% 60%);
+  --color-accent-foreground: hsl(65 100% 10%);
+  --color-destructive: hsl(0 100% 50%);
+  --color-destructive-foreground: hsl(60 5% 98%);
+  --color-border: hsl(200 100% 65%);
+  --color-input: hsl(200 100% 65%);
+  --color-ring: hsl(200 100% 65%);
+
+  /* Custom Colors */
+  --color-brand: hsl(200 100% 65%); /* Using primary */
+  --color-brand-foreground: hsl(200 100% 5%); /* Using primary-foreground */
+  --color-highlight: hsl(40 80% 80%);
+  --color-highlight-foreground: hsl(40 80% 10%);
+  --color-light: hsl(
+    200 100% 25%
+  ); /* Lighter variant within the dark theme, e.g. secondary */
+  --color-light-foreground: hsl(
+    200 100% 90%
+  ); /* Text for that lighter element */
+  --color-dark: hsl(
+    200 100% 10%
+  ); /* Darker variant, e.g. a shade darker than background */
+  --color-dark-foreground: hsl(
+    50 5% 80%
+  ); /* Lighter text for the darker variant */
+
+  --color-white: hsl(0 0% 100%);
+  --color-black: hsl(0 0% 0%);
+
+  /* Chart Colors (derived from accent) */
+  --color-chart-1: hsl(65 90% 60%);
+  --color-chart-2: hsl(65 90% 70%);
+  --color-chart-3: hsl(65 90% 50%);
+  --color-chart-4: hsl(65 90% 40%);
+  --color-chart-5: hsl(65 90% 30%);
+
+  --radius: 0rem;
+}
+
+/* FONTS VARIABLES (No changes needed here for color refactor) */
+[data-font-theme="theme-one-font"] {
+  --font-display: "field-gothic-xxcondensed";
+  --font-display-secondary: "field-gothic-xcondensed";
+  --font-text: "field-gothic";
+  --font-text-secondary: "field-gothic-demi";
+  --font-mono: "field-gothic";
+}
+
+/* FONTS (No changes needed here) */
+@font-face {
+  font-family: "field-gothic-xxcondensed";
+  src:
+    url("https://use.typekit.net/af/2a0513/0000000000000000774ec715/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/2a0513/0000000000000000774ec715/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/2a0513/0000000000000000774ec715/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "field-gothic-xcondensed";
+  src:
+    url("https://use.typekit.net/af/4a7af3/0000000000000000774ec6fe/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/4a7af3/0000000000000000774ec6fe/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/4a7af3/0000000000000000774ec6fe/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "field-gothic";
+  src:
+    url("https://use.typekit.net/af/c9fa10/0000000000000000774ec72c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/c9fa10/0000000000000000774ec72c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/c9fa10/0000000000000000774ec72c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "field-gothic-demi";
+  src:
+    url("https://use.typekit.net/af/04e72e/0000000000000000774ec734/30/l?subset_id=2&fvd=n6&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/04e72e/0000000000000000774ec734/30/d?subset_id=2&fvd=n6&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/04e72e/0000000000000000774ec734/30/a?subset_id=2&fvd=n6&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+}

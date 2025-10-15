@@ -16,14 +16,14 @@ async function getSiteData(): Promise<{ themeName: string }> {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve({
-        themeName: Math.random() > 0.5 ? "one" : "two"
+        themeName: Math.random() > 0.5 ? "one" : "two",
       });
     }, 100);
   });
 }
 
 function toKebabCase(str: string) {
-  return str.toLowerCase().replace(/\s+/g, '-');
+  return str.toLowerCase().replace(/\s+/g, "-");
 }
 
 export default async function RootLayout() {
@@ -31,7 +31,9 @@ export default async function RootLayout() {
   const site = await getSiteData();
   const themeName = site?.themeName ? toKebabCase(site?.themeName) : "one";
 
-  const selectedTheme = await import(`@/styles/themes/theme-${themeName}/theme-${themeName}`);
+  const selectedTheme = await import(
+    `@/styles/themes/theme-${themeName}/theme-${themeName}`
+  );
 
   console.log(themeName);
   console.log(selectedTheme);
@@ -39,8 +41,18 @@ export default async function RootLayout() {
   const theme = (selectedTheme.default as Theme) ?? null;
 
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html
+      lang="en"
+      {...(site?.themeName
+        ? {
+            "data-color-theme": `theme-${toKebabCase(site?.themeName)}-palette`,
+          }
+        : {})}
+      {...(site?.themeName
+        ? { "data-font-theme": `theme-${toKebabCase(site?.themeName)}-font` }
+        : {})}
+    >
+      <body>
         <div className="flex items-center justify-center h-screen w-screen">
           <h1 className="text-9xl">{theme.name}</h1>
         </div>
