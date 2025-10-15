@@ -1,7 +1,3 @@
-## Link to the code that reproduces this issue
-
-https://github.com/[your-username]/dynamic-import-turbo
-
 ## To Reproduce
 
 1. Clone the repository
