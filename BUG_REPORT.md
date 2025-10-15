@@ -53,7 +53,7 @@ styles/
 │       ├── index.tsx       # Exports theme config + imports CSS
 │       ├── theme-two.css   # Contains @font-face
 │       └── fonts/
-│           └── FlatspotNuovo-Book.woff2
+│           └── JetBrainsMono-Bold.woff2
 types/
 └── theme.ts            # Theme interface
 ```
@@ -159,12 +159,12 @@ export default themeTwo;
 }
 
 [data-font-theme="theme-two-font"] {
-  --font-display: "FlatSpot";
+  --font-display: "JetBrainsMono";
 }
 
 @font-face {
-  font-family: "FlatSpot";
-  src: url("./fonts/FlatspotNuovo-Book.woff2") format("woff2");
+  font-family: "JetBrainsMono";
+  src: url("./fonts/JetBrainsMono-Bold.woff2") format("woff2");
   display: swap;
 }
 ```
