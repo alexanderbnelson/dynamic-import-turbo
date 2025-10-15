@@ -45,40 +45,12 @@
 
 /* FONTS VARIABLES */
 [data-font-theme="theme-two-font"] {
-  --font-display: "SuisseAntique";
-  --font-display-secondary: "SuisseMedium";
-  --font-text: "SuisseRegular";
-  --font-text-secondary: "SuisseLight";
-  --font-mono: "SuisseMono";
+  --font-display: "JetBrainsMono";
 }
 
 /* FONTS */
 @font-face {
-  font-family: "SuisseAntique";
-  src: url("./fonts/Suisse-BP-Antique.otf");
-  display: "swap";
-}
-
-@font-face {
-  font-family: "SuisseMedium";
-  src: url("./fonts/Suisse-BP-Medium.otf");
-  display: "swap";
-}
-
-@font-face {
-  font-family: "SuisseRegular";
-  src: url("./fonts/Suisse-BP-Regular.otf");
-  display: "swap";
-}
-
-@font-face {
-  font-family: "SuisseLight";
-  src: url("./fonts/Suisse-BP-Light.otf");
-  display: "swap";
-}
-
-@font-face {
-  font-family: "SuisseMono";
-  src: url("./fonts/Suisse-BP-Mono-Regular.otf");
+  font-family: "JetBrainsMono";
+  src: url("./fonts/JetBrainsMono-Bold.woff2") format("woff2");
   display: "swap";
 }

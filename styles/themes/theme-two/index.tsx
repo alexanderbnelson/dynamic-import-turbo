@@ -1,4 +1,5 @@
 import type { Theme } from "@/types/theme";
+import "./theme-two.css";
 
 const themeTwo: Theme = {
   name: "two",

@@ -57,10 +57,6 @@
 /* FONTS VARIABLES (No changes needed here for color refactor) */
 [data-font-theme="theme-one-font"] {
   --font-display: "field-gothic-xxcondensed";
-  --font-display-secondary: "field-gothic-xcondensed";
-  --font-text: "field-gothic";
-  --font-text-secondary: "field-gothic-demi";
-  --font-mono: "field-gothic";
 }
 
 /* FONTS (No changes needed here) */
@@ -76,50 +72,5 @@
   font-display: auto;
   font-style: normal;
   font-weight: 900;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: "field-gothic-xcondensed";
-  src:
-    url("https://use.typekit.net/af/4a7af3/0000000000000000774ec6fe/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3")
-      format("woff2"),
-    url("https://use.typekit.net/af/4a7af3/0000000000000000774ec6fe/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3")
-      format("woff"),
-    url("https://use.typekit.net/af/4a7af3/0000000000000000774ec6fe/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3")
-      format("opentype");
-  font-display: auto;
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: "field-gothic";
-  src:
-    url("https://use.typekit.net/af/c9fa10/0000000000000000774ec72c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-      format("woff2"),
-    url("https://use.typekit.net/af/c9fa10/0000000000000000774ec72c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-      format("woff"),
-    url("https://use.typekit.net/af/c9fa10/0000000000000000774ec72c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-      format("opentype");
-  font-display: auto;
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: "field-gothic-demi";
-  src:
-    url("https://use.typekit.net/af/04e72e/0000000000000000774ec734/30/l?subset_id=2&fvd=n6&v=3")
-      format("woff2"),
-    url("https://use.typekit.net/af/04e72e/0000000000000000774ec734/30/d?subset_id=2&fvd=n6&v=3")
-      format("woff"),
-    url("https://use.typekit.net/af/04e72e/0000000000000000774ec734/30/a?subset_id=2&fvd=n6&v=3")
-      format("opentype");
-  font-display: auto;
-  font-style: normal;
-  font-weight: 600;
   font-stretch: normal;
 }

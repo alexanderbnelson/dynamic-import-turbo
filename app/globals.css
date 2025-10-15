@@ -11,6 +11,8 @@
     from 180deg at 50% 50%,
     var(--tw-gradient-stops)
   );
+  --font-display: "Inter";
+  --font-flatspot: var(--font-flatspot);
 }
 
 /*
